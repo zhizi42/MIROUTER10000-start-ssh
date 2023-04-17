@@ -9,8 +9,8 @@
 cd /test  
 可以直接执行以下三条语句,不需要再进行编辑:  
 chroot ./  
-sed -i 's/flg_ssh=.*/flg_ssh=1/g' /etc/init.d/dropbear  
-sed -i 's/channel=.*/channel="debug"/g' /etc/init.d/dropbear  
+sed -i 's/flg_ssh=.\*/flg_ssh=1/g' /etc/init.d/dropbear  
+sed -i 's/channel=.\*/channel="debug"/g' /etc/init.d/dropbear  
 /etc/init.d/dropbear start  
 指令执行无误后即可开启一次性的SSH,此时需要连接ssh之后进行固化操作  
 (原方法:
